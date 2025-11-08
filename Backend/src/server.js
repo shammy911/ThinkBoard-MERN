@@ -34,8 +34,8 @@ app.use((req, res, next) => {
 
 app.use("/api/notes", notesRoutes);
 
-if(process.env.NODE_ENV === "poduction") {
-    app.use(express.static(path.join(__dirname, "../Front/dist")));
+if(process.env.NODE_ENV === "production") {
+    app.use(express.static(path.join(__dirname, "../Frontend/dist")));
 
     app.get("*", (req, res) => {
         res.sendFile(path.join(__dirname, "../Frontend", "dist", "index.html"));
