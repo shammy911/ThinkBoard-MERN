@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "@upstash/ratelimit": "^2.0.7",
+    "@upstash/redis": "^1.35.6"
+  },
+  "name": "notes_webapp_mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "build": "npm install --prefix Backend && npm install --prefix Frontend && npm run build --prefix Frontend",
+    "start": "npm run start --prefix Backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shammy911/Notes_WebApp_MERN.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/shammy911/Notes_WebApp_MERN/issues"
+  },
+  "homepage": "https://github.com/shammy911/Notes_WebApp_MERN#readme"
+}
